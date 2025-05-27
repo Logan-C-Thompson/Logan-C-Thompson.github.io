@@ -403,7 +403,6 @@ button::after {
 }
 
 html {
-  scroll-behavior: smooth;
 }
 img{
 	margin-top: -350px;
