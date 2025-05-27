@@ -623,7 +623,7 @@ h3 {
   margin-left:  60px;
 
   /* your image as the sole background */
-  background: url('../images/Data_analyst_pic.png') center/cover no-repeat;
+  background: url('Data_analyst_pic.png') center/cover no-repeat;
 
   /* mask it with a radial fade from opaque center → transparent edges */
   -webkit-mask-image: radial-gradient(circle at center,
