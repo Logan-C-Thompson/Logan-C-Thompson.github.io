@@ -5,7 +5,7 @@
 #scene {
   position: relative;
   z-index: 2;              /* above the hole */
-  perspective: 800px;
+  perspective: 50rem;
   perspective-origin: 50% 50%;
 }
 
@@ -211,11 +211,11 @@ body.sucking #blackhole {
 
 /* spin + open laptop */
 .laptop-wrapper {
-  position: relative;
-  width: 200px;
-  height: 150px;
-  perspective: 800px;
-  transform-origin: 100px 60px;
+   position: relative;
+  width: 12.5rem;   /* 200px → 12.5rem */
+  height: 9.375rem; /* 150px → 9.375rem */
+  perspective: 50rem; /* 800px → 50rem */
+  transform-origin: 6.25rem 3.75rem; /* 100px 60px */
   animation: spin360 1.2s ease-out forwards;
   animation-delay: 0.3s;
   margin-bottom: 1rem; /* space for percent/bar below */
@@ -259,7 +259,7 @@ body.sucking #blackhole {
 /* progress bar below percentage */
 #splash-progress {
   width: 60%;
-  height: 8px;
+  height: 0.5rem;
   background: rgba(255,255,255,0.3);
   border-radius: 4px;
   overflow: hidden;
