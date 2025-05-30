@@ -2,6 +2,61 @@
 /* ── BLACK HOLE & STARS EFFECT ENHANCEMENTS ───────────────────────────────── */
 /* Wrap your main content in a “scene” container: */
 @charset "UTF-8";
+@media (max-width: 768px) {
+  /* Adjust font sizes for better readability */
+  h1, h2, h3, p {
+    font-size: 1.5rem;
+  /* Recenter the intro container and adjust side margins */
+  .intro-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 4rem; /* Adjust vertical spacing as needed */
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Center the avatar image instead of using a large left margin */
+  .avatar {
+    display: block;
+    margin: 0 auto 1rem auto;
+    width: 15rem;   /* Adjust width if needed */
+    height: auto;
+  }
+  .navbar-nav a {
+    font-size: 1rem;
+  }
+  .section {
+    padding-top: 2rem; /* Add more top padding for mobile */
+  }
+
+  /* Adjust headings for mobile */
+  h2 {
+    font-size: 2.5rem;  /* Slightly smaller font for mobile */
+  }
+
+  /* For elements that use fixed margins, convert to percentages */
+  ol, .about {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* Adjust the hero image if it uses margins that push it offscreen */
+  .hero {
+    width: 90%;
+    max-width: 25rem;   /* Ensure it doesn’t grow too large */
+    height: auto;
+    margin: 1rem auto;
+  }
+
+  /* Navigation adjustments */
+  nav ul {
+    flex-wrap: wrap;  /* Allow nav items to wrap on small screens */
+    justify-content: center;
+  }
+}
+     /* Decrease font size on mobile */
 #scene {
   position: relative;
   z-index: 2;              /* above the hole */
